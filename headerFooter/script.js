@@ -6,5 +6,5 @@ function loadElement(id, url) {
         });
 }
 
-loadElement('header-placeholder', '/test/headerFooter/header.html');
-loadElement('footer-placeholder', '/test/headerFooter/footer.html');
+loadElement('header-placeholder', 'header.html');
+loadElement('footer-placeholder', 'footer.html');
