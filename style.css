@@ -16,7 +16,8 @@
     margin: 0;
     font-size: 150%;
     font-weight: bold;
-    width: calc(20% - 20px);
+    flex: 1 1 200px; /* карточка будет тянуться, но не станет меньше 200px */
+    max-width: 300px;
     padding: 10x;
     box-sizing: border-box;
 }
@@ -28,4 +29,15 @@
 .content-aligned {
     margin-left: 128px;
     padding: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* на телефоне лого будет над меню */
+        text-align: center;
+    }
+    
+    .track-card {
+        width: 90%; /* карточки станут крупнее и по одной в ряд */
+    }
 }
